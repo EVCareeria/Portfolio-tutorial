@@ -36,6 +36,7 @@
     transform: rotate(360deg);
   }
 }
+/**************NAVBAR**************************/
 
 :root {
   --primary-white: #fff;
@@ -43,6 +44,10 @@
 
 body {
   font-family: serif;
+}
+
+nav {
+  z-index: 2;
 }
 
 .peruslogo {
@@ -83,3 +88,97 @@ nav ul li {
   text-decoration-color:darkkhaki;
 }
 
+/************** HEADER **************************/
+
+.header-wraper {
+  position:relative;
+  background: url(Asus.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.main-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align:left;
+  opacity:0.9;
+  z-index: 1;
+}
+
+.main-info h1 {
+  margin-left: 10%;
+  font-size: 3rem;
+  font-weight:600;
+  font-style: oblique;
+  color:mintcream;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size:2.5rem;
+  }
+}
+
+/************TYPED TEXT******************/
+
+.typed-info {
+  font-size:2rem;
+  font-weight: 700;
+  color:lightcoral;
+  margin-left: 10%;
+}
+@media(max-width: 768px) {
+  .typed-info h1 {
+    font-size:1.5rem;
+  }
+}
+
+/************BTN******************/
+
+.btn-main-offer {
+    font-size:2rem;
+    font-weight: 700;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    color:lightcoral;
+    text-transform: uppercase;
+    border-radius: 0;
+    margin: 2em;
+}
+@media(max-width: 768px) {
+  .btn-main-offer h1 {
+    font-size:1rem;
+    margin: 1em;
+  }
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color:cornflowerblue;
+  color: coral;
+  transition: .4s ease-in;
+  transition: 0.2 ease-out;
+}
+
+
+/************PARTICLES******************/
+
+.tsparticles-canvas-el {
+position: absolute;
+height: 100vh;
+width: 100vw;
+z-index: 1;
+}
+
+@media(max-width: 768px) {
+  .particles-canvas {
+     display: none;
+  }
+}
